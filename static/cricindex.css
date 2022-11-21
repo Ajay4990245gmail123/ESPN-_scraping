@@ -1,0 +1,34 @@
+body {
+    background-color: #0008C1;
+    text-align: center;
+}
+
+h1 {
+    color: aliceblue;
+    margin-bottom: 70px;
+    font-size: 50px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+select {
+    border: none;
+    width: 20em;
+    height: 40px;
+    text-align: left;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#submit {
+    background-color: aqua;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+option {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}

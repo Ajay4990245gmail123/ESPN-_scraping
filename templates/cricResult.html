@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>result</title>
+        <link href="/static/cricresult.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--heading-->
+        <h1>PLAYARS</h1>
+        <div>
+            <!--        create table-->
+            <table>
+                <tr>
+                    <!--                table headings-->
+                    <th>PlayerName</th>
+                    <th>playYear</th>
+                    <th>PlayingMatch</th>
+                    <th>innings</th>
+                    <th>Notout</th>
+                    <th>runs</th>
+                    <th>HighstScores</th>
+                    <th>avarage</th>
+                    <th>ballsFaced </th>
+                    <th>BattingSR</th>
+                    <th>Hundreds</th>
+                    <th>fiftes</th>
+                    <th>ducks</th>
+                    <th>four</th>
+                    <th>sixes</th>
+                </tr>
+                <!--            using for loop and jinja method-->
+                {%for review in player%}
+                <tr class="tab">
+                    <!--                table data-->
+                    <td>
+                        {{review['PlayerName']}}
+                    </td>
+                    <td>
+                        {{review['playYear']}}
+                    </td>
+                    <td>
+                        {{review['PlayingMatch']}}
+                    </td>
+                    <td>
+                        {{review['innings']}}
+                    </td>
+                    <td>
+                        {{review['Notout']}}
+                    </td>
+                    <td>
+                        {{review['runs']}}
+                    </td>
+                    <td>
+                        {{review['HighstScores']}}
+                    </td>
+                    <td>
+                        {{review['avarage']}}
+                    </td>
+                    <td>
+                        {{review['ballsFaced']}}
+                    </td>
+                    <td>
+                        {{review['BattingSR']}}
+                    </td>
+                    <td>
+                        {{review['Hundreds']}}
+                    </td>
+                    <td>
+                        {{review['fiftes']}}
+                    </td>
+                    <td>
+                        {{review['ducks']}}
+                    </td>
+                    <td>
+                        {{review['four']}}
+                    </td>
+                    <td>
+                        {{review['sixes']}}
+                    </td>
+                </tr>
+                <!--            ending for loop-->
+                {% endfor %}
+            </table>
+        </div>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
